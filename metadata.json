@@ -1,0 +1,6 @@
+{
+  "name": "Gościniec nad Dobrzycą",
+  "description": "Profesjonalna strona internetowa ośrodka rekreacyjnego Gościniec nad Dobrzycą. Spływy kajakowe, wycieczki rowerowe, ogniska i eventy nad rzeką Dobrzycą.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
