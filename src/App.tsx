@@ -455,45 +455,6 @@ export default function App() {
         {/* Hero content bottom-left */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 pb-[10vh]">
           <div className="max-w-[750px] text-left">
-            {/* Interactive elemental switcher toggle */}
-            <motion.div 
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, type: "spring", stiffness: 100 }}
-              className="inline-flex flex-wrap items-center gap-1.5 p-1 bg-black/50 backdrop-blur-md border border-white/10 rounded-full mb-8 relative z-20"
-            >
-              <button 
-                onClick={() => setElementalMode("ogień")}
-                className={`px-4 py-1.5 rounded-full text-[10px] tracking-widest uppercase font-sans font-semibold transition-all duration-300 cursor-pointer ${
-                  elementalMode === "ogień" 
-                    ? "bg-amber text-white shadow-md shadow-amber/20" 
-                    : "text-white/70 hover:text-white hover:bg-white/5"
-                }`}
-              >
-                🔥 Ogień
-              </button>
-              <button 
-                onClick={() => setElementalMode("woda")}
-                className={`px-4 py-1.5 rounded-full text-[10px] tracking-widest uppercase font-sans font-semibold transition-all duration-300 cursor-pointer ${
-                  elementalMode === "woda" 
-                    ? "bg-moss text-white shadow-md shadow-moss/20" 
-                    : "text-white/70 hover:text-white hover:bg-white/5"
-                }`}
-              >
-                💧 Woda
-              </button>
-              <button 
-                onClick={() => setElementalMode("balans")}
-                className={`px-4 py-1.5 rounded-full text-[10px] tracking-widest uppercase font-sans font-semibold transition-all duration-300 cursor-pointer ${
-                  elementalMode === "balans" 
-                    ? "bg-white/20 text-white" 
-                    : "text-white/70 hover:text-white hover:bg-white/5"
-                }`}
-              >
-                ☯️ Balans
-              </button>
-            </motion.div>
-
             <span className="text-amber-pale font-sans font-semibold uppercase text-[11px] tracking-[0.25em] block mb-2">
               ZACHODNIOPOMORSKIE · RZEKA DOBRZYCA
             </span>
